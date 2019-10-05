@@ -104,7 +104,7 @@ ansible_winrm_server_cert_validation= ignore
 
 
 now we can run commands 
-ansible windows -i hosts -m raw -a "ping 8.8.8.8" -u dinesh -k 
+ansible mywin1 -i hosts.yml -m raw -a "mkdir c:\demosat"
 
 ansible windows -i hosts -m script -a "test.ps1" -u dinesh -k
 
