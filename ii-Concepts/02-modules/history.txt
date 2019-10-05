@@ -1,0 +1,142 @@
+    1  apt install update
+    2  apt-get update
+    3  touch newfile
+    4  vi
+    5  vi file
+    6  cat
+    7  cat file
+    8  cat /etc/ansible/ansible.cfg
+    9  cat /etc
+   10  cat /etc/
+   11  cd /etc
+   12  ls
+   13  ifconfig
+   14  apt install openssh-server
+   15  cat /etc/ansible
+   16  cat /etc/ansible/ansible.cfg 
+   17  vi /etc/ansible/ansible.cfg 
+   18  ansible srvps -m Setup
+   19  vi ansible/hosts 
+   20  ansible srvps -m Setup
+   21  vi ansible/hosts 
+   22  ansible srvps -m Setup
+   23  vi /etc/ansible/ansible.cfg 
+   24  vi ansible/hosts 
+   25  ansible srvps -m Setup
+   26  vi ansible/hosts 
+   27  ansible srvps -m Setup
+   28  ansible [windows:vars] -m Setup
+   29  ansible windows:vars -m Setup
+   30  ansible windows -m Setup
+   31  vi ansible/hosts 
+   32  ansible windows -m Setup
+   33  ansible [windows] -m Setup
+   34  vi ansible/hosts 
+   35  ansible windows -m Setup
+   36  vi ansible/hosts 
+   37  ansible windows -m Setup
+   38  vi ansible/hosts 
+   39* 
+   40  vi ansible/hosts 
+   41  ansible windows -m Setup
+   42  ping srvps
+   43  vi hosts
+   44  ping srvps
+   45  ansible windows -m Setup
+   46  ping srvps
+   47  vi hosts
+   48  vi ansible/hosts 
+   49  ansible windows -m Setup
+   50  vi ansible/hosts 
+   51  ansible windows -m Setup
+   52  apt install python-pip
+   53  pip install "pywinrm>=0.3.0"
+   54  ansible windows -m Setup
+   55  ansible windows -m setup
+   56  vi ansible/hosts 
+   57  ifconfig
+   58  ansible windows -m setup
+   59  vi ansible/hosts 
+   60  ansible windowsntlm -m setup
+   61  vi ansible/hosts 
+   62  ansible windowsusername -m setup
+   63  ansible windowsusername -m setup -u -k
+   64  ansible windowsusername -m setup -u administrator -k
+   65  ansible windowsusername -i hosts -m raw -a "ping 8.8.8.8" -u administrator -k
+   66  ansible windowsusername -m raw -a "ping 8.8.8.8" -u administrator -k
+   67  touch test.ps1
+   68  ls
+   69  vi test.ps1
+   70  lsansible windowsusername -m script -a "test.ps1" -u administrator -k
+   71  ansible windowsusername -m script -a "test.ps1" -u administrator -k
+   72  ansible windowsusername -m script -a "test.ps1" 
+   73  vi test.ps1
+   74  ansible windowsusername -m script -a "test.ps1"
+   75  history >test.txt
+   76  history 
+   77  cat test.txt
+   78  cd....
+   79  root
+   80  cd..
+   81  vi history
+   82  history 
+   83  ls
+   84  history >> history.txt
+   85  ls
+   86  cat history.txt
+   87  ls
+   88  history >> abc.txt
+   89  ls
+   90  history > abc.txt
+   91  ls
+   92  vi ansible/hosts 
+   93  git cl
+   94  cd ..
+   95  git clone https://github.com/satish123123/ansiclass.git
+   96  ls
+   97  cd ansiclass/
+   98  ls
+   99  ii-Concepts/
+  100  ls
+  101  cd ii-conecpts
+  102  cd ii-Concepts/
+  103  ls
+  104  cd 02-modules/
+  105  ls
+  106  hosts.yml
+  107  cd hosts.yml
+  108  ansible mywin1:vars -i hosts.yml -m raw -a "mkdir c:\demosat"
+  109  ping srvps
+  110  ls
+  111  ansible mywin1 -i hosts.yml -m raw -a "mkdir c:\demosat"
+  112  git clone https://github.com/satish123123/ansiclass.git
+  113  ls
+  114  cd ansiclass/
+  115  ls
+  116  cd ii-Concepts/
+  117  ls
+  118  cd 02-modules/
+  119  ls
+  120  ansible mywin1 -i hosts.yml -m raw -a "mkdir c:\demosat"
+  121  cd..
+  122  cd ..
+  123  git clone https://github.com/satish123123/ansiclass.git
+  124  ls
+  125  rm ansiclass/
+  126  rm dir ansiclass/
+  127  rm -r ansiclass/
+  128  ls
+  129  git clone https://github.com/satish123123/ansiclass.git
+  130  \ls
+  131  cd ansiclass/
+  132  ls
+  133  cd ii-Concepts/
+  134  ls
+  135  cd 02-modules/
+  136  ls
+  137  ansible mywin1 -i hosts.yml -m raw -a "mkdir c:\demosat"
+  138  git add --all
+  139  cd..
+  140  cd ..
+  141  cd 02-modules/
+  142  history >>history.txt
