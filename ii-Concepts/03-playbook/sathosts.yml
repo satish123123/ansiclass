@@ -12,4 +12,3 @@ mywin1:
 
 ...
 
-ansible-playbook sattasks.yml -i hosts
