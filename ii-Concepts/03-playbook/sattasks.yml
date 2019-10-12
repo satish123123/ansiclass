@@ -9,7 +9,7 @@
     - name: Install telnet
       win_feature: 
         name: Telnet Client
-        state: True
+        state: Present
 
 
 ...
