@@ -8,7 +8,7 @@
  tasks: 
     - name: Install telnet
       win_feature: 
-        name: Telnet Client
+        name: Telnet-Client
         state: Present
 
 
