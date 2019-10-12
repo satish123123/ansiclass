@@ -2,13 +2,14 @@
 mywin1:
  hosts:
   srvps:
-   ansible_user: administrator
-   ansible_password: Test@123
-   ansible_winrm_transport: ntlm
+
  vars:
    ansible_connection: winrm
    ansible_port: 5985
-   ansible_winrm_server_cert_validation: ignore
+   ansible_winrm_server_cert_validation: 
+   ansible_user: administrator
+   ansible_password: Test@123
+   ansible_winrm_transport: ntlm
 
 ...
 
