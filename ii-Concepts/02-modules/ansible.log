@@ -253,3 +253,16 @@
     "size": 470, 
     "src": "hosts.yml"
 }
+2019-10-05 10:30:28,288 p=9401 u=root |  srvps | CHANGED | rc=0 >>
+
+
+    Directory: C:\
+
+
+Mode                LastWriteTime         Length Name                                                                  
+----                -------------         ------ ----                                                                  
+d-----        10/5/2019   4:00 PM                demosat                                                               
+
+
+
+
