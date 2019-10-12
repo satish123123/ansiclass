@@ -1,0 +1,16 @@
+---
+
+hosts: mywin1
+  #gather_facts: false
+
+  # Variable: variables that will apply to the play, on all target systems
+  vars: 
+
+  # Task: the list of tasks that will be executed within the playbook
+  tasks:
+    - name: Install telnet
+      win_feature:
+        name: Telnet Client
+        state: True
+
+        ...
