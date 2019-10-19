@@ -1,0 +1,41 @@
+--
+-
+  hosts: all
+#  gather_facts: true # this will make not to gather facts before running tasks
+
+  tasks: 
+    - name: Copy Files
+      win_copy:
+        content: "Welcome to {{ item }} ansible\n"
+        dest: c:\temp\test.txt
+      loop:
+           - dinesh
+           - basant
+      when: ansible_distribution == "Microsoft Windows Server Datacenter"
+
+    
+
+# you can also use
+# loop:
+#    - {name: 'Dinesh' , company: 'Generalmills'} You can call this by item.name and item.company 
+
+...
+
+---
+-
+
+ hosts: all
+ # gather_facts: true # this will make not to gather facts before running tasks
+
+ vars_files:
+    - satloops.yml
+  
+ tasks: 
+    - name: stop a bits service 
+      win_service: 
+        name: {{item}}
+        state: stopped
+      loop:
+          "{{servicenames}}"
+             
+...
