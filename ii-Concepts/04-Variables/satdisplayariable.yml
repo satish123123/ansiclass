@@ -2,7 +2,7 @@
 -
 
  hosts: windows
-  gather_facts: true # this will make not to gather facts before running tasks
+ # gather_facts: true # this will make not to gather facts before running tasks
 
  vars_files:
     - satexternalservicevariable.yml
