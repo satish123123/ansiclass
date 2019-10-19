@@ -10,7 +10,7 @@
  tasks: 
     - name: stop a bits service 
       win_service: 
-        name: {{item}}
+        name: "{{item}}"
         state: stopped
       loop:
           "{{servicenames}}"
