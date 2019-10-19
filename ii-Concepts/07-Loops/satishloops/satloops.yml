@@ -13,6 +13,6 @@
         name: "{{item}}"
         state: stopped
       loop:
-          "{{servicenames}}"
+          "{{serviceneedstostop}}"
              
 ...
