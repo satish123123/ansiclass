@@ -67,7 +67,7 @@ scm credential
 
 docker logs -f awx_task
 
-docker exec -it <container name> /bin/bash
+docker exec -it  /bin/bash
 
 docker stop $(docker ps -a -q)
 
