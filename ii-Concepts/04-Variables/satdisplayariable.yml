@@ -7,7 +7,7 @@ hosts: windows
 vars_files:
     - satexternalservicevariable.yml
   
-    tasks: 
+tasks: 
     - name: stop a bits service 
       win_service: 
         name: "{{servicenames}}"
