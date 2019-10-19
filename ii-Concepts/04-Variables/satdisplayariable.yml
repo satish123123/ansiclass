@@ -1,13 +1,13 @@
 ---
 -
 
-hosts: windows
+ hosts: windows
   gather_facts: true # this will make not to gather facts before running tasks
 
-vars_files:
+ vars_files:
     - satexternalservicevariable.yml
   
-tasks: 
+ tasks: 
     - name: stop a bits service 
       win_service: 
         name: "{{servicenames}}"
