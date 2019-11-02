@@ -8,18 +8,12 @@
     service.yml
   
  tasks:  
-  name: hello 
-  win_service: >
-        {% if item == "BITS" -%}
-            name: item
-            state: stopped
-        {% elif item == "Dnscache" -%}
-            name: item
-            state: stopped
-        {% else -%}
-             This is not found
-        {% endif %}
-  loop:
+  - name: hello 
+    win_service: 
+        
+            name: {{item}}
+            state: "{% if item == 'BITS'-%}stopped{% elif item == 'Dnscache'-%}started{% else -%}This is not found{% endif %}"
+    loop:
           "{{serviceneedstostop}}"
              
 
