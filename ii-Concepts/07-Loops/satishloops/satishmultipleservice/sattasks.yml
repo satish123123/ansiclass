@@ -10,14 +10,19 @@
  tasks: 
   #  - name: bits service
     #  win_service: 
-    - name: this is "{{item}}"
+    - name: "{{item}}"
       debug:
        msg: >
-              {% for services in item -%}
-                 {%raw-%}{{services}}{%endraw-%}
-              {% endfor -%}
+              {% if item == "BITS" -%}
+                   state: started
+              {% elif item == "Dnscache" -%}
+                   state: stopped
+                    This is DNScache
+              {% else -%}
+                   This is not found
+              {% endif %}
       loop:
-          - "{{serviceneedstostop}}"
+          "{{serviceneedstostop}}"
              
 
 ...
