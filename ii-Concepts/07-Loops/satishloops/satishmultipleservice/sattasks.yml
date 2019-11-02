@@ -14,7 +14,7 @@
       debug:
        msg: >
               {% for services in item -%}
-                  {{services}}
+                 {%raw-%}{{services}}{%endraw-%}
               {% endfor -%}
       loop:
           "{{serviceneedstostop}}"
