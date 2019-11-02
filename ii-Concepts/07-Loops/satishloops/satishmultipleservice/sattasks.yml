@@ -13,7 +13,7 @@
     - name: this is "{{item}}"
       debug:
        msg: >
-              {% for services in {{item}} -%}
+              {% for services in item -%}
                   {{services}}
               {% endfor -%}
       loop:
