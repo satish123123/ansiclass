@@ -9,9 +9,9 @@
   
  tasks: 
   #  - name: bits service
-       
-    - name: "{{item}}"
-      win_service:
+    win_service:
+     - name: "{{item}}"
+      
  #     debug:
  #      msg: >
         {% if item == "BITS" -%}
