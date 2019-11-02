@@ -9,7 +9,7 @@
   
  tasks:  
   name: hello 
-  win_service:
+  win_service: >
         {% if item == "BITS" -%}
             name: item
             state: stopped
