@@ -13,17 +13,17 @@
     - name: "{{item}}"
  #     debug:
  #      msg: >
-              {% if item == "BITS" -%}
-                  win_service: 
-                  name: item
-                  state: stopped
-              {% elif item == "Dnscache" -%}
-                  win_service: 
-                  name: item
-                  state: stopped
-              {% else -%}
-                   This is not found
-              {% endif %}
+        {% if item == "BITS" -%}
+            win_service: 
+            name: item
+            state: stopped
+        {% elif item == "Dnscache" -%}
+            win_service: 
+            name: item
+            state: stopped
+        {% else -%}
+             This is not found
+        {% endif %}
       loop:
           "{{serviceneedstostop}}"
              
