@@ -1,0 +1,6 @@
+---
+
+serviceneedstostop: 
+ ["BITS","Dhcp","Dnscache"]
+
+...

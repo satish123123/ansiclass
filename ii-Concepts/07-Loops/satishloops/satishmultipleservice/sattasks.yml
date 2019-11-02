@@ -1,0 +1,18 @@
+---
+-
+
+ hosts: all
+ # gather_facts: true # this will make not to gather facts before running tasks
+
+ vars_files:
+    service.yml
+  
+ tasks: 
+    - name: stop a bits service 
+      win_service: 
+        name: "{{item}}"
+        state: stopped
+      loop:
+          "{{serviceneedstostop}}"
+             
+...
