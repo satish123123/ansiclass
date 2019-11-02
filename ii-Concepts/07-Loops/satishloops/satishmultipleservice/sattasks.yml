@@ -8,11 +8,26 @@
     service.yml
   
  tasks: 
-    - name: stop a bits service 
+    - name: bits service 
       win_service: 
         name: "{{item}}"
-        state: stopped
-      loop:
+      
+          debug:
+        msg: >
+            This is test if ansible
+             {% for services in win_service -%}
+                  {% if win_service == "BITS" -%}
+                   state: started
+
+                  {% elif win_service == "Dnscache" -%}
+                    state: stopped
+                    This is DNScache
+                  {% else -%}
+                   This is not found
+                  {% endif %}
+             {% endfor -%}
+        loop:
           "{{serviceneedstostop}}"
              
+
 ...
