@@ -10,7 +10,7 @@
  tasks: 
   #  - name: bits service
     #  win_service: 
-    - name: "{{item}}"
+    - name: this is "{{item}}"
       debug:
        msg: >
               {% for services in "{{item}}" -%}
