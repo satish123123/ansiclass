@@ -7,13 +7,8 @@
  vars_files:
     service.yml
   
- tasks: 
-  #  - name: bits service
-  #  win_service:
-   #  - name: "{{item}}"
-      
- #     debug:
- #      msg: >
+ tasks:  
+  name: hello 
         {% if item == "BITS" -%}
             win_service:
              name: item
