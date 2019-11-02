@@ -8,8 +8,8 @@
     service.yml
   
  tasks: 
-    - name: bits service 
-      win_service: 
+    - name: bits service
+    #  win_service: 
         name: "{{item}}"
         debug:
          msg: >
