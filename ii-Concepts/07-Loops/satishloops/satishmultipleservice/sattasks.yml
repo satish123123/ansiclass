@@ -9,18 +9,17 @@
   
  tasks:  
   name: hello 
+  win_service:
         {% if item == "BITS" -%}
-            win_service:
-             name: item
-             state: stopped
+            name: item
+            state: stopped
         {% elif item == "Dnscache" -%}
-            win_service:
-             name: item
-             state: stopped
+            name: item
+            state: stopped
         {% else -%}
              This is not found
         {% endif %}
-      loop:
+  loop:
           "{{serviceneedstostop}}"
              
 
