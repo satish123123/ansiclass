@@ -14,7 +14,7 @@
       debug:
        msg: >
             This is test if ansible
-             {% for services in win_service -%}
+             {% for services in "win_service" -%}
                   {% if services == "BITS" -%}
                    state: started
 
