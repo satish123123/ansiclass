@@ -9,16 +9,14 @@
   
  tasks: 
   #  - name: bits service
-    #  win_service: 
+      win_service: 
     - name: "{{item}}"
  #     debug:
  #      msg: >
         {% if item == "BITS" -%}
-            win_service: 
             name: item
             state: stopped
         {% elif item == "Dnscache" -%}
-            win_service: 
             name: item
             state: stopped
         {% else -%}
