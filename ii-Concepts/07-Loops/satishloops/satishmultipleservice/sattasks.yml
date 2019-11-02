@@ -8,9 +8,9 @@
     service.yml
   
  tasks: 
-    - name: bits service
+  #  - name: bits service
     #  win_service: 
-        name: "{{item}}"
+    - name: "{{item}}"
         debug:
          msg: >
             This is test if ansible
