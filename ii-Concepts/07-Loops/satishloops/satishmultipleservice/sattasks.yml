@@ -12,7 +12,7 @@
     win_service: 
         
             name: {{item}}
-            state: "{% if item == 'BITS'-%}stopped{% elif item == 'Dnscache'-%}started{% else -%}This is not found{% endif %}"
+            state: "{% if item == 'BITS'-%}started{% elif item == 'Dnscache'-%}stopped{% else -%}This is not found{% endif %}"
     loop:
           "{{serviceneedstostop}}"
              
