@@ -17,7 +17,7 @@
                  {%raw-%}{{services}}{%endraw-%}
               {% endfor -%}
       loop:
-          "{{serviceneedstostop}}"
+          - "{{serviceneedstostop}}"
              
 
 ...
