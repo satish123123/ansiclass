@@ -14,7 +14,7 @@
       debug:
        msg: >
             This is test if ansible
-             {% for services in "{{item}}" -%}
+             {% for services in {{item}} -%}
                   {% if services == "BITS" -%}
                    state: started
 
