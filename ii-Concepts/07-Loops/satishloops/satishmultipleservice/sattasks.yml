@@ -16,10 +16,10 @@
         msg: >
             This is test if ansible
              {% for services in win_service -%}
-                  {% if win_service == "BITS" -%}
+                  {% if services == "BITS" -%}
                    state: started
 
-                  {% elif win_service == "Dnscache" -%}
+                  {% elif services == "Dnscache" -%}
                     state: stopped
                     This is DNScache
                   {% else -%}
