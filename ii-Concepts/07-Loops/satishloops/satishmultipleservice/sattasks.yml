@@ -11,8 +11,8 @@
   #  - name: bits service
     #  win_service: 
     - name: "{{item}}"
-      debug:
-       msg: >
+#      debug:
+ #      msg: >
               {% if item == "BITS" -%}
                    state: started
               {% elif item == "Dnscache" -%}
