@@ -13,9 +13,9 @@
     - name: "{{item}}"
       debug:
        msg: >
-              {% if "{{item}}" == "BITS" -%}
+              {% if item == "BITS" -%}
                    state: started
-              {% elif "{{item}}" == "Dnscache" -%}
+              {% elif item == "Dnscache" -%}
                    state: stopped
                     This is DNScache
               {% else -%}
