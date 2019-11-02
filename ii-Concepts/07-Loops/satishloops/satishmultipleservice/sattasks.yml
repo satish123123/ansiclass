@@ -13,17 +13,8 @@
     - name: "{{item}}"
       debug:
        msg: >
-            This is test if ansible
-             {% for services in {{item}} -%}
-                  {% if services == "BITS" -%}
-                   state: started
-
-                  {% elif services == "Dnscache" -%}
-                    state: stopped
-                    This is DNScache
-                  {% else -%}
-                   This is not found
-                  {% endif %}
+              {% for services in "{{item}}" -%}
+                  {{services}}
              {% endfor -%}
       loop:
           "{{serviceneedstostop}}"
