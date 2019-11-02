@@ -15,11 +15,11 @@
        msg: >
               {% if item == "BITS" -%}
                   win_service: 
-                  name: "{{item}}"
+                #  name: item
                   state: stopped
               {% elif item == "Dnscache" -%}
                   win_service: 
-                  name: "{{item}}"
+                # name: item
                   state: stopped
               {% else -%}
                    This is not found
