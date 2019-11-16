@@ -18,3 +18,4 @@
              
 
 ...
+#{% elif ansible_env.subrole =='web'-%}webrole.yml{% else -%}
