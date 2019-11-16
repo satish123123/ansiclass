@@ -8,7 +8,7 @@
      debug: 
        msg: this is main file
    
-   - include_tasks: "{% if ansible_env.mainrole =='win'-%}winrole.yml{% elif ansible_env.subrole =='web'-%}webrole.yml{% else -%}{% endif %}"
+   - include_tasks: "{% if ansible_env.mainrole =='win'-%}winrole.yml{% endif %}"
              
       
     
