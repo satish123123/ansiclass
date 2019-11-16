@@ -1,0 +1,29 @@
+---
+-
+  hosts: all
+  gather_facts: true # this will make not to gather facts before running tasks
+
+  tasks: 
+    - name: Stop service on winrole or create new folder in webrole
+      var: ansible_env
+      debug:
+           msg: play1-task1
+
+    - name: Loop runs
+      debug:
+       msg: >
+            This is test if ansible
+             {% if ansible_env.mainrole == 'win' -%}
+                   - include_tasks: winrole.yml
+             {% elif ansible_env.subrole == 'web'-%}
+                   - include_tasks: webrole.yml
+             {% else -%}
+             This is not found
+             {% endif %}
+             
+      
+    
+
+
+...
+
