@@ -1,20 +1,8 @@
 ---
--
-# Above - sign indicates a list item. 
- 
-  # Target: where our play will run and options it will run with
-  hosts: windows
-  #gather_facts: false
-
-  # Variable: variables that will apply to the play, on all target systems
-  vars: 
-
-  # Task: the list of tasks that will be executed within the playbook
-  tasks:
-    - name: create new folder
-      win_file:
-       path: C:\inetpub
-       state: directory
+- name: create new folder
+  win_file:
+    path: C:\inetpub
+    state: directory
   # Handlers: handlers that are executed as a notify key from a task
 
   # Roles: list of roles to be imported into the play
