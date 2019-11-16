@@ -1,6 +1,6 @@
 ---
-   - name: stop a bits service 
-      win_service: 
-        name: BITS
-        state: stopped
+- name: stop a bits service 
+  win_service: 
+     name: BITS
+     state: stopped
 ...
