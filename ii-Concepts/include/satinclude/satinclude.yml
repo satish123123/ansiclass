@@ -5,8 +5,7 @@
 
   tasks: 
     - name: Stop service on winrole or create new folder in webrole
-      vars: ansible_env
-    
+
     - include_tasks: >
             This is test if ansible
              {% if ansible_env.mainrole == 'win' -%}
