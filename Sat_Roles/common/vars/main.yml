@@ -1,0 +1,6 @@
+---
+# vars file for common
+Features:
+  - Telnet-Client
+services:
+  - BITS
