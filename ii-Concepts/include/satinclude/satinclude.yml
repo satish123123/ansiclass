@@ -4,15 +4,9 @@
   gather_facts: true # this will make not to gather facts before running tasks
 
   tasks: 
-   - include_tasks: >
-            This is test if ansible
-             {% if ansible_env.mainrole == 'win' -%}
-                  winrole.yml
-             {% elif ansible_env.subrole == 'web'-%}
-                  webrole.yml
-             {% else -%}
-             This is not found
-             {% endif %}
+   - name: tasks
+   
+   - include_tasks: {% if ansible_env.mainrole == 'win' -%}winrole.yml{% elif ansible_env.subrole == 'web'-%}webrole.yml{% else -%}This is not found{% endif %}
              
       
     
