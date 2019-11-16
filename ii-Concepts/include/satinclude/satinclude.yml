@@ -4,7 +4,7 @@
   gather_facts: true # this will make not to gather facts before running tasks
 
   vars:
-    ymlfile: "{% if ansible_env.mainrole =='win'-%}winrole.yml{% elif ansible_env.subrole =='web'-%}webrole.yml{% else -%}{% endif %}"
+    ymlfile: "{% if ansible_env.mainrole =='wabc'-%}winrole.yml{% elif ansible_env.subrole =='web'-%}webrole.yml{% else -%}{% endif %}"
 
   tasks: 
    - name: tasks
