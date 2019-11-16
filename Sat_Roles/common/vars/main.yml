@@ -3,4 +3,4 @@
 Features:
   - Telnet-Client
 services:
-  - BITS
+  ["BITS","Dhcp","Dnscache"]

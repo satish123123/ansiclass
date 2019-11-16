@@ -8,5 +8,7 @@
 
 - name: Stop services
   win_service: 
-    name: "{{services}}"
+    name: "{{item}}"
     state: stopped
+  loop:
+      "{{services}}"
