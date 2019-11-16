@@ -19,3 +19,4 @@
 
 ...
 #{% elif ansible_env.subrole =='web'-%}webrole.yml{% else -%}
+#{% if ansible_env.mainrole =='win'-%}winrole.yml{% endif %}
