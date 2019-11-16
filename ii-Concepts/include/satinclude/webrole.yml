@@ -1,7 +1,7 @@
 ---
 - name: create new folder
   win_file:
-    path: C:\inetpub
+    path: C:\inetpub1
     state: directory
   # Handlers: handlers that are executed as a notify key from a task
 
