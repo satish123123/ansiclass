@@ -6,7 +6,7 @@
   tasks: 
    - name: tasks
    
-   - include_tasks: {% if ansible_env.mainrole == 'win' -%}winrole.yml{% elif ansible_env.subrole == 'web'-%}webrole.yml{% else -%}This is not found{% endif %}
+   - include_tasks: {% if ansible_env.mainrole == 'win' -%}winrole.yml{% elif ansible_env.subrole == 'web'-%}webrole.yml{% else -%}{% endif %}
              
       
     
