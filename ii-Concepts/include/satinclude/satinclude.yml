@@ -5,18 +5,14 @@
 
   tasks: 
     - name: Stop service on winrole or create new folder in webrole
-      var: ansible_env
-      debug:
-           msg: play1-task1
-
-    - name: Loop runs
-      debug:
-       msg: >
+      vars: ansible_env
+    
+    - include_tasks: >
             This is test if ansible
              {% if ansible_env.mainrole == 'win' -%}
-                   - include_tasks: winrole.yml
+                  winrole.yml
              {% elif ansible_env.subrole == 'web'-%}
-                   - include_tasks: webrole.yml
+                  webrole.yml
              {% else -%}
              This is not found
              {% endif %}
