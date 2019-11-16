@@ -3,12 +3,15 @@
   hosts: all
   gather_facts: true # this will make not to gather facts before running tasks
 
+  vars:
+    ymlfile: "{% if 'win' =='win'-%}winrole.yml{% endif %}"
+
   tasks: 
    - name: tasks
      debug: 
        msg: this is main file
    
-   - include_tasks: "{% if 'win' =='win'-%}winrole.yml{% endif %}"
+   - include_tasks: "{{ymlfile}}"
              
       
     
