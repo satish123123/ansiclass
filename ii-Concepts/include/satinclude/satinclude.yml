@@ -4,9 +4,7 @@
   gather_facts: true # this will make not to gather facts before running tasks
 
   tasks: 
-    - name: Stop service on winrole or create new folder in webrole
-
-    - include_tasks: >
+   - include_tasks: >
             This is test if ansible
              {% if ansible_env.mainrole == 'win' -%}
                   winrole.yml
